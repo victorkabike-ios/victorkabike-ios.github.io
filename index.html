@@ -1,34 +1,78 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap">
+    <title>Your iOS Portfolio</title>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Victor Kabike</h1>
-            <p>iOS Developer</p>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
     </header>
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <h3>Project Name 1</h3>
-                <p>Description of the project goes here. You can include technologies used, features, etc.</p>
-                <a href="link-to-your-github-repo-1" target="_blank">GitHub Repository</a>
+
+    <main>
+        <section class="about">
+            <div class="profile">
+                <img src="/images/profile.jpg" alt="Your Profile Image">
+                <h1>Hi👋🏽 <br>I'm Victor</h1>
+                <p>
+                    Hello! I'm a passionate iOS developer with a focus on creating engaging and user-friendly apps. 
+                    My expertise lies in Swift and SwiftUI. I love turning ideas into functional and aesthetically pleasing applications.
+                </p>
             </div>
-            <div class="project-card">
-                <h3>Project Name 2</h3>
-                <p>Description of the second project goes here. You can include technologies used, features, etc.</p>
-                <a href="link-to-your-github-repo-2" target="_blank">GitHub Repository</a>
+
+           
+        </section>
+
+        <section id="projects" class="projects-container">
+            <!-- Project 1 -->
+            <div class="project">
+                <h2>Proshots</h2>
+                <p>Explore, edit, and share effortlessly with ProShot your smart photo gallery app. AI tools, declutter, memories, and privacy, all in one app. Simply ProShot, simply better.</p>
+                <div class="screenshot-container">
+                    <img src="\images\project1-screenshot1.png" alt="Project 1 Screenshot 1">
+                    <img src="\images\project1-screenshot2.png" alt="Project 1 Screenshot 2">
+                    <img src="\images\project1-screenshot3.png" alt="Project 1 Screenshot 3">
+                </div>
+        
             </div>
-            <!-- Add more project cards as needed -->
-        </div>
-    </section>
+        
+            <!-- Project 2 -->
+            <div class="project"
+                <h2>Project 2</h2>
+                <div class="screenshot-container">
+                    <img src="project2-screenshot1.jpg" alt="Project 2 Screenshot 1">
+                    <img src="project2-screenshot2.jpg" alt="Project 2 Screenshot 2">
+                    <img src="project2-screenshot3.jpg" alt="Project 2 Screenshot 3">
+                </div>
+                <p>Description of Project 2 with SwiftUI. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        
+            <!-- Project 3 -->
+            <div class="project">
+                <h2>Project 3</h2>
+                <div class="screenshot-container">
+                    <img src="project3-screenshot1.jpg" alt="Project 3 Screenshot 1">
+                    <img src="project3-screenshot2.jpg" alt="Project 3 Screenshot 2">
+                    <img src="project3-screenshot3.jpg" alt="Project 3 Screenshot 3">
+                </div>
+                <p>Description of Project 3 with SwiftUI. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </section>
+        
+     
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Name - iOS Developer</p>
+    </footer>
 </body>
+
 </html>
