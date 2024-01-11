@@ -1,143 +1,154 @@
-body, h1, h2, p, ul {
-    margin: 0;
-    padding: 0;
-}
 body {
-    font-family: 'Libre Franklin', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(7, 6, 6);
-    color: #333;
+    background-color: rgb(17, 18, 21);
+    color: #fff;
+    font-family: 'DM Mono', monospace;
+    /* font-style: italic; */
+    margin: 60px 0px 0px;
+    padding: 20px;
+    
 }
-
-header {
-    padding: 1rem 0;
-    text-align: center;
-    color: #f8f8f8;
-    background-color: rgb(4, 45, 98);
-    padding: 1cm;
+.container {
+    max-width: 800px; /* Adjust as needed */
 
 }
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: right;
-    margin: 0;
-    padding: 0;
+a {
+    font-family: 'DM Mono', monospace;
+    font-size: 20px;
+    line-height: 28px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    margin: 20px 0px 0px;
+    padding: 0px;
+    font-weight: 400;
+    color: rgb(2, 255, 124); 
 }
 
-nav li {
-    margin-right: 3rem;
+.header {
+    font-family: 'Inter-BlackItalic', 'Inter', sans-serif;
+    font-size: 48px;
+    line-height: 57.6px;
+    letter-spacing: -1.5px;
+    color: #F5F5F7;
+    text-align: start;
 }
 
-nav a {
-    text-decoration: none;
-    color: #f4f4f4;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: color 0.3s ease-in-out;
+
+.description, .sub-header  {
+    font-family: 'DM Mono', monospace;
+    font-size: 20px;
+    line-height: 28px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    margin: 20px 0px 0px;
+    padding: 0px;
+    font-weight: 400;
+    color: rgb(161, 161, 170);
+}
+.status {
+    margin-top: 20px;
+    font-family: 'DM Mono', monospace;
+    font-size: 20px;
+    line-height: 28px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    margin: 20px 0px 0px;
+    padding: 0px;
+    font-weight: 400;
+    color: rgb(161, 161, 170);
+}
+.status span {
+    display: inline-block;
+    margin-right: 10px;
+}
+.last-icon {
+    color: #0015ff; /* Change this to the color you want */
 }
 
-nav a:hover {
-    color: #ffffff; /* Change the color on hover */
-}
 
-.profile {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.profile img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-.profile h1 {
-    margin: 0;
-    font-size: 5rem;
-}
-
-.profile p {
-    margin: 0;
-    font-size: 2rem;
-}
-
-main {
-    width: 100%;
-    margin: 2rem auto;
-}
-
-.project {
-    width: 100%;
-    margin-bottom: 2rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-    padding: 3cm;
-}
-.project h2 {
-    font-size: 3rem;
-    padding: 1rem;
-    margin: 0;
-    color: #ffffff;
-}
-
-.project:hover {
-    transform: scale(1.05);
-}
-
-.projects-container {
+.nav {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: auto;
-
+    font-size: 20px;
+    line-height: 28px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    margin: 40px 0px 0px;
+    padding: 0px;
+    font-weight: 400;
+    color: rgb(161, 161, 170);
 }
-.screenshot-container {
+
+.nav a {
+    flex: 1;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 40px;
+}
+
+
+
+.nav i {
+    margin-right: 10px;
+}
+.projects {
+   margin: 40px 0px 0px;
+}
+
+.title {
+    font-family: 'Inter-BlackItalic', 'Inter', sans-serif;
+    font-size: 48px;
+    line-height: 57.6px;
+    letter-spacing: -1.5px;
+    color: #F5F5F7;
+    text-align: start;
+    margin-bottom: 40px;
+}
+.project {
+    margin: 20px;
+}
+.project p {
+    font-family: 'DM Mono', monospace;
+    font-size: 20px;
+    line-height: 28px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    margin: 20px 0px 0px;
+    padding: 0px;
+    font-weight: 400;
+    color: rgb(161, 161, 170);
+}
+.date {
+    font-size: 16px;
+    line-height: 18px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    background-color: #808080; /* Change this to the desired gray color */
+    border-radius: 5px; /* Adjust this to change the roundness of the corners */
+    padding: 2px 6px; /* This adds some space around the text inside the rectangle */
+}
+.screenshots {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    width: 33.33%;
-    height: 800px;
-   
-}
-.screenshot-container img {
-    flex-grow: 1;
-    object-fit: cover;
-    border-radius: 1cm;
-}
-h1 {
-    font-size: 100rem; /* Add the desired font size */
-    padding: 1rem;
-    margin: 0;
-    color: #ffffff;
+    justify-content: space-between;
+    transition: background-color 0.3s ease; /* This will animate the background color change */
+    padding: 20px;
+    margin: 20px 0px 0px;
+    border-radius: 20px; /* Adjust this to change the roundness of the corners */
 }
 
-h2 {
-    color: #ffffff;
-    padding: 1rem;
-    margin: 0;
+.screenshot {    
+    padding: 10px;
+    margin: 40px 0px 0px; /* This adds some space around the image inside the rectangle */
 }
-
-p {
-    line-height: 1.6;
-    font-size: 1.5rem;
-    padding: 1rem;
-    margin: 0;
-    color: #f4f4f4;
+.screenshot img {
+    width: 180px; /* Adjust this to change the width of the image */
+    height: auto; /* This will maintain the aspect ratio of the image */
 }
-footer {
-    text-align: left;
-    padding: 1rem;
-    position: initial;
-    bottom: 0;
-    background-color: rgb(4, 45, 98); /* Add background color for better visibility */
-    color: #fff; /* Add text color for better visibility */
+.screenshots:hover {
+    background-color:rgb(255, 255, 255, 0.05); /* Change this to the desired gray color */
 }
-
-
