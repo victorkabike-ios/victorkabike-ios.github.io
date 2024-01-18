@@ -150,7 +150,7 @@ a {
     margin: 40px 0px 0px; /* This adds some space around the image inside the rectangle */
 }
 .screenshot img {
-    max-width: 100%;
+    width: 180px;
     height: auto;
 }
 
