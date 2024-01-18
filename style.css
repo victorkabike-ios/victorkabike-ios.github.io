@@ -11,6 +11,10 @@ body {
     max-width: 800px; /* Adjust as needed */
 
 }
+.container-fluid {
+    padding: 20px;
+}
+
 a {
     font-family: 'DM Mono', monospace;
     font-size: 20px;
@@ -146,9 +150,10 @@ a {
     margin: 40px 0px 0px; /* This adds some space around the image inside the rectangle */
 }
 .screenshot img {
-    width: 180px; /* Adjust this to change the width of the image */
-    height: auto; /* This will maintain the aspect ratio of the image */
+    max-width: 100%;
+    height: auto;
 }
+
 /* .screenshots:hover {
     background-color:rgb(255, 255, 255, 0.05); /* Change this to the desired gray color */
 } */
